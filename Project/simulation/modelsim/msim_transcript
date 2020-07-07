@@ -1,4 +1,5 @@
 # Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
 # do NEC_IR_Transceiver_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,9 +11,21 @@
 # Copying D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:43:42 on Jul 07,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MuxCustom
+# -- Compiling architecture behaviour of MuxCustom
+# End time: 13:43:42 on Jul 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:30 on Jul 03,2020
+# Start time: 13:43:42 on Jul 07,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,23 +33,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Register32Bit
 # -- Compiling architecture behaviour of Register32Bit
-# End time: 15:39:30 on Jul 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:30 on Jul 03,2020
-# vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Mux
-# -- Compiling architecture behaviour of Mux
-# End time: 15:39:31 on Jul 03,2020, Elapsed time: 0:00:01
+# End time: 13:43:42 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:31 on Jul 03,2020
+# Start time: 13:43:42 on Jul 07,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,11 +45,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Mod32Counter
 # -- Compiling architecture behaviour of Mod32Counter
-# End time: 15:39:31 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:43 on Jul 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:31 on Jul 03,2020
+# Start time: 13:43:43 on Jul 07,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -56,11 +57,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity LimitedCounter
 # -- Compiling architecture behaviour of LimitedCounter
-# End time: 15:39:31 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:43 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:31 on Jul 03,2020
+# Start time: 13:43:43 on Jul 07,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,11 +69,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity DataFormatter
 # -- Compiling architecture behaviour of DataFormatter
-# End time: 15:39:31 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:43 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:31 on Jul 03,2020
+# Start time: 13:43:43 on Jul 07,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -80,11 +81,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ClockModulator
 # -- Compiling architecture behaviour of ClockModulator
-# End time: 15:39:31 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:43 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:32 on Jul 03,2020
+# Start time: 13:43:44 on Jul 07,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -92,11 +93,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ClockDivider
 # -- Compiling architecture behaviour of ClockDivider
-# End time: 15:39:32 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:44 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:39:32 on Jul 03,2020
+# Start time: 13:43:44 on Jul 07,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -104,12 +105,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Mealy_Controller
 # -- Compiling architecture behaviour of Mealy_Controller
-# End time: 15:39:32 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:44 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:34 on Jul 03,2020
+# Start time: 13:43:58 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -117,11 +118,11 @@ vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ClockDivider
 # -- Compiling architecture behaviour of ClockDivider
-# End time: 15:41:34 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:59 on Jul 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:34 on Jul 03,2020
+# Start time: 13:43:59 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -129,11 +130,11 @@ vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ClockModulator
 # -- Compiling architecture behaviour of ClockModulator
-# End time: 15:41:34 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:59 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:34 on Jul 03,2020
+# Start time: 13:43:59 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -141,25 +142,11 @@ vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC
 # -- Loading package NUMERIC_STD
 # -- Compiling entity DataFormatter
 # -- Compiling architecture behaviour of DataFormatter
-# End time: 15:41:34 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:59 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/IR_NEC_transmit_controller.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:34 on Jul 03,2020
-# vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/IR_NEC_transmit_controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity IR_NEC_transmit_controller
-# ** Error: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/IR_NEC_transmit_controller.vhd(24): (vcom-1294) Declaration with designator "s_clear" already exists in this region.
-# ** =====> Prior declaration of "s_clear" is at C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/IR_NEC_transmit_controller.vhd(22).
-# ** Error: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/IR_NEC_transmit_controller.vhd(26): VHDL Compiler exiting
-# End time: 15:41:34 on Jul 03,2020, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:34 on Jul 03,2020
+# Start time: 13:43:59 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -167,11 +154,11 @@ vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC
 # -- Loading package NUMERIC_STD
 # -- Compiling entity LimitedCounter
 # -- Compiling architecture behaviour of LimitedCounter
-# End time: 15:41:34 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:59 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:34 on Jul 03,2020
+# Start time: 13:43:59 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -179,11 +166,11 @@ vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Mealy_Controller
 # -- Compiling architecture behaviour of Mealy_Controller
-# End time: 15:41:34 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:59 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:34 on Jul 03,2020
+# Start time: 13:43:59 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -191,47 +178,34 @@ vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Mod32Counter
 # -- Compiling architecture behaviour of Mod32Counter
-# End time: 15:41:34 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:43:59 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd
+vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:35 on Jul 03,2020
-# vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd 
+# Start time: 13:43:59 on Jul 07,2020
+# vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Mux
-# -- Compiling architecture behaviour of Mux
-# End time: 15:41:35 on Jul 03,2020, Elapsed time: 0:00:00
+# -- Compiling entity MuxCustom
+# -- Compiling architecture behaviour of MuxCustom
+# End time: 13:44:00 on Jul 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/mux_0.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:35 on Jul 03,2020
-# vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/mux_0.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Error: (vcom-11) Could not find altera.maxplus2.
-# ** Error (suppressible): C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/mux_0.vhd(24): (vcom-1195) Cannot find expanded name "altera.maxplus2".
-# ** Error: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/mux_0.vhd(24): Unknown expanded name.
-# ** Error: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/mux_0.vhd(28): VHDL Compiler exiting
-# End time: 15:41:35 on Jul 03,2020, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:35 on Jul 03,2020
+# Start time: 13:44:00 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity NEC_IR_Transceiver
 # -- Compiling architecture bdf_type of NEC_IR_Transceiver
-# End time: 15:41:35 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:44:00 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:41:35 on Jul 03,2020
+# Start time: 13:44:00 on Jul 07,2020
 # vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -239,11 +213,11 @@ vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Register32Bit
 # -- Compiling architecture behaviour of Register32Bit
-# End time: 15:41:35 on Jul 03,2020, Elapsed time: 0:00:00
+# End time: 13:44:00 on Jul 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim -gui -l msim_transcript work.nec_ir_transceiver -t ns
 # vsim -gui -l msim_transcript work.nec_ir_transceiver -t ns 
-# Start time: 15:42:01 on Jul 03,2020
+# Start time: 13:44:12 on Jul 07,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -252,15 +226,1916 @@ vsim -gui -l msim_transcript work.nec_ir_transceiver -t ns
 # Loading work.dataformatter(behaviour)
 # Loading work.mealy_controller(behaviour)
 # Loading work.register32bit(behaviour)
-# ** Warning: (vsim-3473) Component instance "b2v_inst3 : mux_0" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd
 # Loading work.mod32counter(behaviour)
 # Loading work.clockdivider(behaviour)
 # Loading work.clockmodulator(behaviour)
 # Loading work.limitedcounter(behaviour)
+# Loading work.muxcustom(behaviour)
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_format.do
 add wave -position insertpoint  \
-sim:/nec_ir_transceiver/clock50MHz \
-sim:/nec_ir_transceiver/nrst
+sim:/nec_ir_transceiver/IR_OUT
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_format.do
-# End time: 16:03:39 on Jul 03,2020, Elapsed time: 0:21:38
-# Errors: 0, Warnings: 1
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:41 on Jul 07,2020
+# vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Mealy_Controller
+# -- Compiling architecture behaviour of Mealy_Controller
+# End time: 13:56:41 on Jul 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# Loading work.mealy_controller(behaviour)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:01:13 on Jul 07,2020
+# vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Mealy_Controller
+# -- Compiling architecture behaviour of Mealy_Controller
+# End time: 14:01:13 on Jul 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# Loading work.mealy_controller(behaviour)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:06 on Jul 07,2020
+# vcom -reportprogress 300 -work work C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MuxCustom
+# -- Compiling architecture behaviour of MuxCustom
+# End time: 14:04:06 on Jul 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# Loading work.muxcustom(behaviour)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+do C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/simulation/NEC_IR_Transceiver_Sim.do
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst9
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /nec_ir_transceiver/b2v_inst4
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 10 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483646 is not in bounds of subtype NATURAL.
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483645 is not in bounds of subtype NATURAL.
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483644 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483642 is not in bounds of subtype NATURAL.
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483640 is not in bounds of subtype NATURAL.
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483639 is not in bounds of subtype NATURAL.
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483638 is not in bounds of subtype NATURAL.
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483637 is not in bounds of subtype NATURAL.
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483636 is not in bounds of subtype NATURAL.
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483635 is not in bounds of subtype NATURAL.
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483634 is not in bounds of subtype NATURAL.
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483633 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483632 is not in bounds of subtype NATURAL.
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 310 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483631 is not in bounds of subtype NATURAL.
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 330 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483630 is not in bounds of subtype NATURAL.
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483629 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483628 is not in bounds of subtype NATURAL.
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483627 is not in bounds of subtype NATURAL.
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 410 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483626 is not in bounds of subtype NATURAL.
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 430 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483625 is not in bounds of subtype NATURAL.
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 450 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483624 is not in bounds of subtype NATURAL.
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 470 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483623 is not in bounds of subtype NATURAL.
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 490 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483622 is not in bounds of subtype NATURAL.
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 510 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483621 is not in bounds of subtype NATURAL.
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 530 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483620 is not in bounds of subtype NATURAL.
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 550 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483619 is not in bounds of subtype NATURAL.
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 570 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483618 is not in bounds of subtype NATURAL.
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 590 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483617 is not in bounds of subtype NATURAL.
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 610 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483616 is not in bounds of subtype NATURAL.
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 630 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483615 is not in bounds of subtype NATURAL.
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 650 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483614 is not in bounds of subtype NATURAL.
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 670 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483613 is not in bounds of subtype NATURAL.
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 690 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483612 is not in bounds of subtype NATURAL.
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 710 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483611 is not in bounds of subtype NATURAL.
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 730 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483610 is not in bounds of subtype NATURAL.
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 750 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483609 is not in bounds of subtype NATURAL.
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 770 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483608 is not in bounds of subtype NATURAL.
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 790 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483607 is not in bounds of subtype NATURAL.
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 810 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483606 is not in bounds of subtype NATURAL.
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 830 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483605 is not in bounds of subtype NATURAL.
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 850 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483604 is not in bounds of subtype NATURAL.
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 870 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483603 is not in bounds of subtype NATURAL.
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 890 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483602 is not in bounds of subtype NATURAL.
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 910 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483601 is not in bounds of subtype NATURAL.
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 930 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483600 is not in bounds of subtype NATURAL.
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 950 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483599 is not in bounds of subtype NATURAL.
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 970 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Error: (vsim-86) Argument value -2147483598 is not in bounds of subtype NATURAL.
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 990 ns  Iteration: 2  Instance: /nec_ir_transceiver/b2v_inst5
+# End time: 17:35:00 on Jul 07,2020, Elapsed time: 3:50:48
+# Errors: 468, Warnings: 459

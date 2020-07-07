@@ -37,25 +37,25 @@ begin
 	process(counter)
 	begin
 	
-		if counter > 109 then
+		if counter > 54 then
 			short <= '1';
 		else
 			short <= '0';
 		end if;
 		
-		if counter > 329 then
+		if counter > 164 then
 			long <= '1';
 		else
 			long <= '0';
 		end if;
 		
-		if counter > 878 then
+		if counter > 439 then
 			b_short <= '1';
 		else
 			b_short <= '0';
 		end if;
 		
-		if counter > 1757 then
+		if counter > 878 then
 			b_long <= '1';
 		else
 			b_long <= '0';

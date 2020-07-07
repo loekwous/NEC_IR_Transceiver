@@ -1,6 +1,8 @@
 restart -f
 
-force clk 0 0, 1 20 -rep 40
-force nrst 1 1, 0 70, 1 100
-
-run 5000
+force clock50MHz 0 0, 1 10 -rep 20
+force nrst 1 1, 0 1000, 1 3000
+force Address 16#X 0, 16#00F0 8000, 16#X 1200000, 16#8D72 66000000, 16#X 67000000
+force Data 16#X 0, 16#FE 9000, 16#X 1200000, 16#B1 66000000, 16#X 67000000 
+force available 0 0, 1 9500, 0 1000000, 1 66100000, 0 66150000
+run 140000000

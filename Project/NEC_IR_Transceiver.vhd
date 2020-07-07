@@ -15,7 +15,7 @@
 
 -- PROGRAM		"Quartus Prime"
 -- VERSION		"Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
--- CREATED		"Fri Jul 03 15:39:29 2020"
+-- CREATED		"Tue Jul 07 12:59:21 2020"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -36,17 +36,6 @@ ENTITY NEC_IR_Transceiver IS
 END NEC_IR_Transceiver;
 
 ARCHITECTURE bdf_type OF NEC_IR_Transceiver IS 
-
-ATTRIBUTE black_box : BOOLEAN;
-ATTRIBUTE noopt : BOOLEAN;
-
-COMPONENT mux_0
-	PORT(Data : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-		 sel : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
-		 output : OUT STD_LOGIC);
-END COMPONENT;
-ATTRIBUTE black_box OF mux_0: COMPONENT IS true;
-ATTRIBUTE noopt OF mux_0: COMPONENT IS true;
 
 COMPONENT dataformatter
 	PORT(Address : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -94,6 +83,7 @@ END COMPONENT;
 
 COMPONENT clockdivider
 	PORT(clk50MHz : IN STD_LOGIC;
+		 nrst : IN STD_LOGIC;
 		 sys_clk : OUT STD_LOGIC
 	);
 END COMPONENT;
@@ -116,22 +106,29 @@ COMPONENT limitedcounter
 	);
 END COMPONENT;
 
+COMPONENT muxcustom
+	PORT(Data : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 sel : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+		 output : OUT STD_LOGIC
+	);
+END COMPONENT;
+
 SIGNAL	b_long :  STD_LOGIC;
 SIGNAL	b_short :  STD_LOGIC;
 SIGNAL	c_out :  STD_LOGIC;
 SIGNAL	clear :  STD_LOGIC;
 SIGNAL	clk50MHz :  STD_LOGIC;
 SIGNAL	d_bit :  STD_LOGIC;
+SIGNAL	format_out :  STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL	long :  STD_LOGIC;
 SIGNAL	r_set :  STD_LOGIC;
+SIGNAL	reg_out :  STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL	s_enable :  STD_LOGIC;
 SIGNAL	s_last :  STD_LOGIC;
+SIGNAL	sel :  STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL	short :  STD_LOGIC;
 SIGNAL	sys_clk :  STD_LOGIC;
 SIGNAL	t_clear :  STD_LOGIC;
-SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC_VECTOR(4 DOWNTO 0);
 
 
 BEGIN 
@@ -141,7 +138,7 @@ BEGIN
 b2v_inst : dataformatter
 PORT MAP(Address => Address,
 		 Data => Data,
-		 output => SYNTHESIZED_WIRE_0);
+		 output => format_out);
 
 
 b2v_inst1 : mealy_controller
@@ -166,14 +163,8 @@ b2v_inst2 : register32bit
 PORT MAP(clk => sys_clk,
 		 set => r_set,
 		 clear => clear,
-		 Data => SYNTHESIZED_WIRE_0,
-		 output => SYNTHESIZED_WIRE_1);
-
-
-b2v_inst3 : mux_0
-PORT MAP(Data => SYNTHESIZED_WIRE_1,
-		 sel => SYNTHESIZED_WIRE_2,
-		 output => d_bit);
+		 Data => format_out,
+		 output => reg_out);
 
 
 b2v_inst4 : mod32counter
@@ -181,11 +172,12 @@ PORT MAP(enable => s_enable,
 		 clear => clear,
 		 clk => sys_clk,
 		 last => s_last,
-		 output => SYNTHESIZED_WIRE_2);
+		 output => sel);
 
 
 b2v_inst5 : clockdivider
 PORT MAP(clk50MHz => clk50MHz,
+		 nrst => nrst,
 		 sys_clk => sys_clk);
 
 
@@ -203,6 +195,12 @@ PORT MAP(clear => t_clear,
 		 long => long,
 		 b_short => b_short,
 		 b_long => b_long);
+
+
+b2v_inst9 : muxcustom
+PORT MAP(Data => reg_out,
+		 sel => sel,
+		 output => d_bit);
 
 clk50MHz <= clock50MHz;
 

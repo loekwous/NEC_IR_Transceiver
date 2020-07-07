@@ -22,10 +22,14 @@ begin
 	begin
 	
 		if rising_edge(clk) then
-			if clear = '1' or (counter = 31) then
-				counter <= 0;
+			if clear = '1' then
+				counter <= 0 after 5 ns;
 			elsif enable = '1' then
-				counter <= counter + 1;
+				if counter = 31 then
+					counter <= 0 after 5 ns;
+				else
+					counter <= counter + 1 after 5 ns;
+				end if;
 			end if;
 		end if;
 	end process;
@@ -34,9 +38,9 @@ begin
 	begin
 	
 		if (counter = 31) then
-			last <= '1';
+			last <= '1' after 5 ns;
 		else
-			last <= '0';
+			last <= '0' after 5 ns;
 		end if;
 	
 	end process;

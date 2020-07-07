@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity Mux is
+entity MuxCustom is
 
 port(
 	Data		: in std_logic_vector(31 downto 0);
@@ -12,7 +12,7 @@ port(
 	
 end entity;
 
-architecture behaviour of Mux is
+architecture behaviour of MuxCustom is
 begin
 	
 	process(sel,Data)

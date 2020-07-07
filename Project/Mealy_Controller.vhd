@@ -147,7 +147,7 @@ begin
 		when S2 => -- Do nothing until timer is finished then clear timer
 			if b_short = '1' then
 				clear 	<= '0' after 5 ns;
-				s_enable <= '1' after 5 ns;
+				s_enable <= '0' after 5 ns;
 				r_set 	<= '0' after 5 ns;
 				t_clear 	<= '1' after 5 ns;
 				c_out 	<= '0' after 5 ns;
@@ -165,7 +165,7 @@ begin
 				clear 	<= '0' after 5 ns;
 				s_enable <= '0' after 5 ns;
 				r_set 	<= '0' after 5 ns;
-				t_clear 	<= '0' after 5 ns;
+				t_clear 	<= '1' after 5 ns;
 				c_out 	<= '0' after 5 ns;
 				ready 	<= '0' after 5 ns;
 			else

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NEC_IR_Transceiver
-Fri Jul 03 15:37:45 2020
+Tue Jul 07 14:03:50 2020
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Jul 03 15:37:45 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jul 07 14:03:50 2020       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; NEC_IR_Transceiver                          ;
 ; Top-level Entity Name           ; NEC_IR_Transceiver                          ;
@@ -167,7 +167,8 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -176,9 +177,9 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                               ; Library ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
+; MuxCustom.vhd                    ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd          ;         ;
 ; NEC_IR_Transceiver.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.bdf ;         ;
 ; Register32Bit.vhd                ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd      ;         ;
-; Mux.vhd                          ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd                ;         ;
 ; Mod32Counter.vhd                 ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd       ;         ;
 ; LimitedCounter.vhd               ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd     ;         ;
 ; DataFormatter.vhd                ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd      ;         ;
@@ -193,14 +194,14 @@ agreement for further details.
 +---------------------------------------------+-------------------------------+
 ; Resource                                    ; Usage                         ;
 +---------------------------------------------+-------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 131                           ;
+; Estimate of Logic utilization (ALMs needed) ; 132                           ;
 ;                                             ;                               ;
 ; Combinational ALUT usage for logic          ; 215                           ;
 ;     -- 7 input functions                    ; 8                             ;
-;     -- 6 input functions                    ; 36                            ;
-;     -- 5 input functions                    ; 11                            ;
-;     -- 4 input functions                    ; 10                            ;
-;     -- <=3 input functions                  ; 150                           ;
+;     -- 6 input functions                    ; 38                            ;
+;     -- 5 input functions                    ; 10                            ;
+;     -- 4 input functions                    ; 8                             ;
+;     -- <=3 input functions                  ; 151                           ;
 ;                                             ;                               ;
 ; Dedicated logic registers                   ; 167                           ;
 ;                                             ;                               ;
@@ -210,8 +211,8 @@ agreement for further details.
 ;                                             ;                               ;
 ; Maximum fan-out node                        ; ClockDivider:inst5|counter[8] ;
 ; Maximum fan-out                             ; 105                           ;
-; Total fan-out                               ; 1308                          ;
-; Average fan-out                             ; 2.97                          ;
+; Total fan-out                               ; 1343                          ;
+; Average fan-out                             ; 3.05                          ;
 +---------------------------------------------+-------------------------------+
 
 
@@ -221,12 +222,12 @@ agreement for further details.
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name        ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+--------------------+--------------+
 ; |NEC_IR_Transceiver         ; 215 (8)             ; 167 (0)                   ; 0                 ; 0          ; 29   ; 0            ; |NEC_IR_Transceiver                        ; NEC_IR_Transceiver ; work         ;
-;    |ClockDivider:inst5|     ; 41 (41)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|ClockDivider:inst5     ; ClockDivider       ; work         ;
+;    |ClockDivider:inst5|     ; 39 (39)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|ClockDivider:inst5     ; ClockDivider       ; work         ;
 ;    |ClockModulator:inst6|   ; 42 (42)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|ClockModulator:inst6   ; ClockModulator     ; work         ;
-;    |LimitedCounter:inst7|   ; 51 (51)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|LimitedCounter:inst7   ; LimitedCounter     ; work         ;
-;    |Mealy_Controller:inst1| ; 20 (20)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Mealy_Controller:inst1 ; Mealy_Controller   ; work         ;
-;    |Mod32Counter:inst4|     ; 44 (44)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Mod32Counter:inst4     ; Mod32Counter       ; work         ;
-;    |Mux:inst3|              ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Mux:inst3              ; Mux                ; work         ;
+;    |LimitedCounter:inst7|   ; 53 (53)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|LimitedCounter:inst7   ; LimitedCounter     ; work         ;
+;    |Mealy_Controller:inst1| ; 21 (21)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Mealy_Controller:inst1 ; Mealy_Controller   ; work         ;
+;    |Mod32Counter:inst4|     ; 43 (43)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Mod32Counter:inst4     ; Mod32Counter       ; work         ;
+;    |MuxCustom:inst9|        ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|MuxCustom:inst9        ; MuxCustom          ; work         ;
 ;    |Register32Bit:inst2|    ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Register32Bit:inst2    ; Register32Bit      ; work         ;
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -267,7 +268,7 @@ Encoding Type:  One-Hot
 ; Total registers                              ; 167   ;
 ; Number of registers using Synchronous Clear  ; 154   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 39    ;
+; Number of registers using Asynchronous Clear ; 71    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 94    ;
 ; Number of registers using Preset             ; 0     ;
@@ -279,13 +280,11 @@ Encoding Type:  One-Hot
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; LimitedCounter:inst7|counter[31]       ; 18      ;
-; LimitedCounter:inst7|counter[0]        ; 2       ;
+; LimitedCounter:inst7|counter[31]       ; 17      ;
+; LimitedCounter:inst7|counter[0]        ; 5       ;
 ; Mod32Counter:inst4|counter[0]          ; 7       ;
 ; Mod32Counter:inst4|counter[31]         ; 3       ;
-; ClockDivider:inst5|counter[0]          ; 2       ;
-; ClockDivider:inst5|counter[31]         ; 2       ;
-; Total number of inverted registers = 6 ;         ;
+; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
 
@@ -294,9 +293,9 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |NEC_IR_Transceiver|Mod32Counter:inst4|counter[22] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |NEC_IR_Transceiver|Register32Bit:inst2|output[11] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |NEC_IR_Transceiver|Mod32Counter:inst4|counter[0]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |NEC_IR_Transceiver|Register32Bit:inst2|output[6]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |NEC_IR_Transceiver|Mod32Counter:inst4|counter[22] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |NEC_IR_Transceiver|Mod32Counter:inst4|counter[31] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
@@ -306,27 +305,28 @@ Encoding Type:  One-Hot
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 167                         ;
-;     CLR               ; 7                           ;
+;     CLR               ; 9                           ;
+;     CLR SCLR          ; 30                          ;
 ;     ENA CLR SCLR      ; 32                          ;
 ;     ENA SCLR          ; 62                          ;
-;     SCLR              ; 60                          ;
-;     plain             ; 6                           ;
+;     SCLR              ; 30                          ;
+;     plain             ; 4                           ;
 ; arriav_lcell_comb     ; 215                         ;
 ;     arith             ; 128                         ;
 ;         1 data inputs ; 128                         ;
 ;     extend            ; 8                           ;
 ;         7 data inputs ; 8                           ;
 ;     normal            ; 79                          ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 7                           ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 10                          ;
 ;         3 data inputs ; 4                           ;
-;         4 data inputs ; 10                          ;
-;         5 data inputs ; 11                          ;
-;         6 data inputs ; 36                          ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 38                          ;
 ; boundary_port         ; 29                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.56                        ;
+; Average LUT depth     ; 3.45                        ;
 +-----------------------+-----------------------------+
 
 
@@ -345,19 +345,18 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Jul 03 15:37:28 2020
+    Info: Processing started: Tue Jul 07 14:03:31 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NEC_IR_Transceiver -c NEC_IR_Transceiver
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file muxcustom.vhd
+    Info (12022): Found design unit 1: MuxCustom-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd Line: 15
+    Info (12023): Found entity 1: MuxCustom File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file nec_ir_transceiver.bdf
     Info (12023): Found entity 1: NEC_IR_Transceiver
 Info (12021): Found 2 design units, including 1 entities, in source file register32bit.vhd
     Info (12022): Found design unit 1: Register32Bit-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd Line: 17
     Info (12023): Found entity 1: Register32Bit File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd Line: 5
-Warning (12090): Entity "Mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: Mux-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd Line: 15
-    Info (12023): Found entity 1: Mux File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mux.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mod32counter.vhd
     Info (12022): Found design unit 1: Mod32Counter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd Line: 17
     Info (12023): Found entity 1: Mod32Counter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd Line: 5
@@ -371,7 +370,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file clockmo
     Info (12022): Found design unit 1: ClockModulator-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd Line: 20
     Info (12023): Found entity 1: ClockModulator File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file clockdivider.vhd
-    Info (12022): Found design unit 1: ClockDivider-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 14
+    Info (12022): Found design unit 1: ClockDivider-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 15
     Info (12023): Found entity 1: ClockDivider File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mealy_controller.vhd
     Info (12022): Found design unit 1: Mealy_Controller-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd Line: 28
@@ -380,23 +379,26 @@ Info (12127): Elaborating entity "NEC_IR_Transceiver" for the top level hierarch
 Info (12128): Elaborating entity "ClockModulator" for hierarchy "ClockModulator:inst6"
 Warning (10492): VHDL Process Statement warning at ClockModulator.vhd(30): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd Line: 30
 Info (12128): Elaborating entity "Mealy_Controller" for hierarchy "Mealy_Controller:inst1"
-Info (12128): Elaborating entity "Mux" for hierarchy "Mux:inst3"
+Info (12128): Elaborating entity "MuxCustom" for hierarchy "MuxCustom:inst9"
 Info (12128): Elaborating entity "Register32Bit" for hierarchy "Register32Bit:inst2"
 Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:inst5"
 Info (12128): Elaborating entity "DataFormatter" for hierarchy "DataFormatter:inst"
 Info (12128): Elaborating entity "Mod32Counter" for hierarchy "Mod32Counter:inst4"
 Info (12128): Elaborating entity "LimitedCounter" for hierarchy "LimitedCounter:inst7"
 Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register ClockDivider:inst5|counter[31] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 21
+    Critical Warning (18010): Register ClockDivider:inst5|counter[0] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 21
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 268 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 239 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Fri Jul 03 15:37:45 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:35
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Tue Jul 07 14:03:50 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:42
 
 
