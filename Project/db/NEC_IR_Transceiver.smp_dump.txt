@@ -1,5 +1,16 @@
 
-State Machine - |NEC_IR_Transceiver|Mealy_Controller:inst1|present_state
+State Machine - |NEC_IR_Transceiver|NEC_IR_Receiver:inst|Mealy_Controller_Receiver:inst3|present_state
+Name present_state.S6 present_state.S5 present_state.S4 present_state.S3 present_state.S2 present_state.S1 present_state.Sx present_state.S0 
+present_state.S0 0 0 0 0 0 0 0 0 
+present_state.Sx 0 0 0 0 0 0 1 1 
+present_state.S1 0 0 0 0 0 1 0 1 
+present_state.S2 0 0 0 0 1 0 0 1 
+present_state.S3 0 0 0 1 0 0 0 1 
+present_state.S4 0 0 1 0 0 0 0 1 
+present_state.S5 0 1 0 0 0 0 0 1 
+present_state.S6 1 0 0 0 0 0 0 1 
+
+State Machine - |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Mealy_Controller:inst14|present_state
 Name present_state.S6 present_state.S5 present_state.S4 present_state.S3 present_state.S2 present_state.S1 present_state.Sx present_state.S0 
 present_state.S0 0 0 0 0 0 0 0 0 
 present_state.Sx 0 0 0 0 0 0 1 1 

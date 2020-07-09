@@ -1,0 +1,142 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 232 272)
+	(text "Mealy_Controller_Receiver" (rect 24 64 157 76)(font "Arial" ))
+	(text "inst" (rect 8 192 25 204)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "IR_in" (rect 0 0 25 12)(font "Arial" ))
+		(text "IR_in" (rect 21 35 46 47)(font "Arial" ))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 88 0)
+		(input)
+		(text "last" (rect 0 0 17 12)(font "Arial" ))
+		(text "last" (rect 80 25 92 42)(font "Arial" )(vertical))
+		(line (pt 88 0)(pt 88 17))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "short" (rect 0 0 24 12)(font "Arial" ))
+		(text "short" (rect 21 83 45 95)(font "Arial" ))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "long" (rect 0 0 20 12)(font "Arial" ))
+		(text "long" (rect 21 99 41 111)(font "Arial" ))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "b_short" (rect 0 0 36 12)(font "Arial" ))
+		(text "b_short" (rect 21 115 57 127)(font "Arial" ))
+		(line (pt 0 120)(pt 16 120))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "b_long" (rect 0 0 31 12)(font "Arial" ))
+		(text "b_long" (rect 21 131 52 143)(font "Arial" ))
+		(line (pt 0 136)(pt 16 136))
+	)
+	(port
+		(pt 168 96)
+		(input)
+		(text "valid" (rect 0 0 23 12)(font "Arial" ))
+		(text "valid" (rect 120 88 143 100)(font "Arial" ))
+		(line (pt 152 96)(pt 168 96))
+	)
+	(port
+		(pt 64 208)
+		(input)
+		(text "sys_clk" (rect 0 0 38 12)(font "Arial" ))
+		(text "sys_clk" (rect 56 144 68 182)(font "Arial" )(vertical))
+		(line (pt 64 208)(pt 64 191))
+	)
+	(port
+		(pt 88 208)
+		(input)
+		(text "nrst" (rect 0 0 18 12)(font "Arial" ))
+		(text "nrst" (rect 80 164 92 182)(font "Arial" )(vertical))
+		(line (pt 88 208)(pt 88 191))
+	)
+	(port
+		(pt 168 152)
+		(input)
+		(text "ready" (rect 0 0 28 12)(font "Arial" ))
+		(text "ready" (rect 115 144 143 156)(font "Arial" ))
+		(line (pt 152 152)(pt 168 152))
+	)
+	(port
+		(pt 0 160)
+		(output)
+		(text "clear" (rect 0 0 23 12)(font "Arial" ))
+		(text "clear" (rect 24 152 47 164)(font "Arial" ))
+		(line (pt 16 160)(pt 0 160))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "shift" (rect 0 0 22 12)(font "Arial" ))
+		(text "shift" (rect 129 43 147 55)(font "Arial" ))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "D_shift" (rect 0 0 36 12)(font "Arial" ))
+		(text "D_shift" (rect 120 24 150 36)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 0 176)
+		(output)
+		(text "t_clear" (rect 0 0 33 12)(font "Arial" ))
+		(text "t_clear" (rect 24 168 57 180)(font "Arial" ))
+		(line (pt 16 176)(pt 0 176))
+	)
+	(port
+		(pt 72 0)
+		(output)
+		(text "cnt" (rect 0 0 15 12)(font "Arial" ))
+		(text "cnt" (rect 64 23 76 38)(font "Arial" )(vertical))
+		(line (pt 72 0)(pt 72 16))
+	)
+	(port
+		(pt 168 136)
+		(output)
+		(text "available" (rect 0 0 43 12)(font "Arial" ))
+		(text "available" (rect 111 131 147 143)(font "Arial" ))
+		(line (pt 168 136)(pt 152 136))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 192))
+	)
+)

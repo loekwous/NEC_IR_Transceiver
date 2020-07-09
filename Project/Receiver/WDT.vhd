@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity WDT is
+
+	port(
+		clear 	: in  std_logic;
+		sys_clk 	: in  std_logic;
+		nrst 		: in  std_logic;
+		nWDTR	  	: out std_logic
+	);
+
+end entity;
+
+architecture behaviour of WDT is
+	signal counter : integer;
+begin
+
+	process(sys_clk, nrst)
+	begin
+		if nrst = '0' then
+			counter <= 0 after 5 ns;
+		elsif rising_edge(sys_clk) then
+			if clear = '1' then
+				counter <= 0 after 5 ns;
+			else
+				if counter > 8800 then
+					counter <= 0 after 5 ns;
+				else
+					counter <= counter + 1 after 5 ns;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(counter)
+	begin
+		if counter = 8800 then
+			nWDTR <= '0' after 5 ns;
+		else
+			nWDTR <= '1' after 5 ns;
+		end if;
+	end process;
+		
+end architecture;

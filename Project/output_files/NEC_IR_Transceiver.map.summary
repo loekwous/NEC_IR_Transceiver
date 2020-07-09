@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Tue Jul 07 14:03:50 2020
+Analysis & Synthesis Status : Successful - Fri Jul 10 01:22:59 2020
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : NEC_IR_Transceiver
 Top-level Entity Name : NEC_IR_Transceiver
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 167
-Total pins : 29
+Total registers : 280
+Total pins : 56
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

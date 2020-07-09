@@ -8,15 +8,115 @@
 					"strict" : false
 				},
 				{
-					"name" : "ready",
+					"name" : "o_available",
 					"strict" : false
 				},
 				{
-					"name" : "available",
+					"name" : "i_ready",
 					"strict" : false
 				},
 				{
-					"name" : "clock50MHz",
+					"name" : "o_address[15]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[14]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[13]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[12]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[11]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[10]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_available",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				},
 				{
@@ -24,99 +124,107 @@
 					"strict" : false
 				},
 				{
-					"name" : "Address[10]",
+					"name" : "o_ready",
 					"strict" : false
 				},
 				{
-					"name" : "Address[8]",
+					"name" : "IR_IN",
 					"strict" : false
 				},
 				{
-					"name" : "Address[11]",
+					"name" : "i_address[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[9]",
+					"name" : "i_address[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[2]",
+					"name" : "i_address[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[0]",
+					"name" : "i_address[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[3]",
+					"name" : "i_address[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[1]",
+					"name" : "i_address[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[2]",
+					"name" : "i_address[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[0]",
+					"name" : "i_address[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[3]",
+					"name" : "i_data[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[1]",
+					"name" : "i_data[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[14]",
+					"name" : "i_data[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[12]",
+					"name" : "i_data[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[15]",
+					"name" : "i_address[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[13]",
+					"name" : "i_address[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[6]",
+					"name" : "i_address[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[4]",
+					"name" : "i_address[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[7]",
+					"name" : "i_address[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Address[5]",
+					"name" : "i_address[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[6]",
+					"name" : "i_address[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[4]",
+					"name" : "i_address[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[7]",
+					"name" : "i_data[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Data[5]",
+					"name" : "i_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[5]",
 					"strict" : false
 				}
 			]

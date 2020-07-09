@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NEC_IR_Transceiver
-Tue Jul 07 14:03:50 2020
+Fri Jul 10 01:22:59 2020
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,14 +13,20 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |NEC_IR_Transceiver|Mealy_Controller:inst1|present_state
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. State Machine - |NEC_IR_Transceiver|NEC_IR_Receiver:inst|Mealy_Controller_Receiver:inst3|present_state
+  9. State Machine - |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Mealy_Controller:inst14|present_state
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst10
+ 16. Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst9
+ 17. Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst8
+ 18. Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst11
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -47,14 +53,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jul 07 14:03:50 2020       ;
+; Analysis & Synthesis Status     ; Successful - Fri Jul 10 01:22:59 2020       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; NEC_IR_Transceiver                          ;
 ; Top-level Entity Name           ; NEC_IR_Transceiver                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 167                                         ;
-; Total pins                      ; 29                                          ;
+; Total registers                 ; 280                                         ;
+; Total pins                      ; 56                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -167,75 +173,94 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
-; MuxCustom.vhd                    ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd          ;         ;
-; NEC_IR_Transceiver.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.bdf ;         ;
-; Register32Bit.vhd                ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd      ;         ;
-; Mod32Counter.vhd                 ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd       ;         ;
-; LimitedCounter.vhd               ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd     ;         ;
-; DataFormatter.vhd                ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd      ;         ;
-; ClockModulator.vhd               ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd     ;         ;
-; ClockDivider.vhd                 ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd       ;         ;
-; Mealy_Controller.vhd             ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd   ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                               ; Library ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; Transmitter/Register32Bit.vhd          ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd          ;         ;
+; Transmitter/MuxCustom.vhd              ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd              ;         ;
+; Transmitter/Mod32Counter.vhd           ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd           ;         ;
+; Transmitter/Mealy_Controller.vhd       ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd       ;         ;
+; Transmitter/LimitedCounter.vhd         ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd         ;         ;
+; Transmitter/DataFormatter.vhd          ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd          ;         ;
+; Transmitter/ClockModulator.vhd         ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd         ;         ;
+; Transmitter/ClockDivider.vhd           ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd           ;         ;
+; Receiver/Mealy_Controller_Receiver.vhd ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd ;         ;
+; NEC_IR_Transceiver.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.bdf                 ;         ;
+; Receiver/PulseTimer.vhd                ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd                ;         ;
+; Receiver/Mod33Counter.vhd              ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mod33Counter.vhd              ;         ;
+; Receiver/ShiftRegister.vhd             ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd             ;         ;
+; Receiver/DataCollector.vhd             ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd             ;         ;
+; Receiver/TimeValidator.vhd             ; yes             ; User VHDL File                     ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd             ;         ;
+; NEC_IR_Transmitter.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transmitter.bdf                 ;         ;
+; NEC_IR_Receiver.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Receiver.bdf                    ;         ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                 ;
-+---------------------------------------------+-------------------------------+
-; Resource                                    ; Usage                         ;
-+---------------------------------------------+-------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 132                           ;
-;                                             ;                               ;
-; Combinational ALUT usage for logic          ; 215                           ;
-;     -- 7 input functions                    ; 8                             ;
-;     -- 6 input functions                    ; 38                            ;
-;     -- 5 input functions                    ; 10                            ;
-;     -- 4 input functions                    ; 8                             ;
-;     -- <=3 input functions                  ; 151                           ;
-;                                             ;                               ;
-; Dedicated logic registers                   ; 167                           ;
-;                                             ;                               ;
-; I/O pins                                    ; 29                            ;
-;                                             ;                               ;
-; Total DSP Blocks                            ; 0                             ;
-;                                             ;                               ;
-; Maximum fan-out node                        ; ClockDivider:inst5|counter[8] ;
-; Maximum fan-out                             ; 105                           ;
-; Total fan-out                               ; 1343                          ;
-; Average fan-out                             ; 3.05                          ;
-+---------------------------------------------+-------------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 216        ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 347        ;
+;     -- 7 input functions                    ; 8          ;
+;     -- 6 input functions                    ; 69         ;
+;     -- 5 input functions                    ; 22         ;
+;     -- 4 input functions                    ; 16         ;
+;     -- <=3 input functions                  ; 232        ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 280        ;
+;                                             ;            ;
+; I/O pins                                    ; 56         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; nrst~input ;
+; Maximum fan-out                             ; 110        ;
+; Total fan-out                               ; 2263       ;
+; Average fan-out                             ; 3.06       ;
++---------------------------------------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name        ; Library Name ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+--------------------+--------------+
-; |NEC_IR_Transceiver         ; 215 (8)             ; 167 (0)                   ; 0                 ; 0          ; 29   ; 0            ; |NEC_IR_Transceiver                        ; NEC_IR_Transceiver ; work         ;
-;    |ClockDivider:inst5|     ; 39 (39)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|ClockDivider:inst5     ; ClockDivider       ; work         ;
-;    |ClockModulator:inst6|   ; 42 (42)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|ClockModulator:inst6   ; ClockModulator     ; work         ;
-;    |LimitedCounter:inst7|   ; 53 (53)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|LimitedCounter:inst7   ; LimitedCounter     ; work         ;
-;    |Mealy_Controller:inst1| ; 21 (21)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Mealy_Controller:inst1 ; Mealy_Controller   ; work         ;
-;    |Mod32Counter:inst4|     ; 43 (43)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Mod32Counter:inst4     ; Mod32Counter       ; work         ;
-;    |MuxCustom:inst9|        ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|MuxCustom:inst9        ; MuxCustom          ; work         ;
-;    |Register32Bit:inst2|    ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|Register32Bit:inst2    ; Register32Bit      ; work         ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+--------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name               ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------------+--------------+
+; |NEC_IR_Transceiver                     ; 347 (8)             ; 280 (0)                   ; 0                 ; 0          ; 56   ; 0            ; |NEC_IR_Transceiver                                                      ; NEC_IR_Transceiver        ; work         ;
+;    |NEC_IR_Receiver:inst|               ; 132 (0)             ; 113 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst                                 ; NEC_IR_Receiver           ; work         ;
+;       |ClockDivider:inst5|              ; 39 (39)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|ClockDivider:inst5              ; ClockDivider              ; work         ;
+;       |DataCollector:inst4|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|DataCollector:inst4             ; DataCollector             ; work         ;
+;       |Mealy_Controller_Receiver:inst3| ; 21 (21)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|Mealy_Controller_Receiver:inst3 ; Mealy_Controller_Receiver ; work         ;
+;       |Mod33Counter:inst6|              ; 43 (43)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|Mod33Counter:inst6              ; Mod33Counter              ; work         ;
+;       |PulseTimer:inst7|                ; 11 (11)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|PulseTimer:inst7                ; PulseTimer                ; work         ;
+;       |ShiftRegister:inst|              ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|ShiftRegister:inst              ; ShiftRegister             ; work         ;
+;       |TimeValidator:inst10|            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|TimeValidator:inst10            ; TimeValidator             ; work         ;
+;       |TimeValidator:inst11|            ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|TimeValidator:inst11            ; TimeValidator             ; work         ;
+;       |TimeValidator:inst8|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|TimeValidator:inst8             ; TimeValidator             ; work         ;
+;       |TimeValidator:inst9|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|TimeValidator:inst9             ; TimeValidator             ; work         ;
+;    |NEC_IR_Transmitter:inst6|           ; 207 (0)             ; 167 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6                             ; NEC_IR_Transmitter        ; work         ;
+;       |ClockDivider:inst15|             ; 39 (39)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|ClockDivider:inst15         ; ClockDivider              ; work         ;
+;       |ClockModulator:inst17|           ; 42 (42)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|ClockModulator:inst17       ; ClockModulator            ; work         ;
+;       |LimitedCounter:inst18|           ; 53 (53)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|LimitedCounter:inst18       ; LimitedCounter            ; work         ;
+;       |Mealy_Controller:inst14|         ; 21 (21)             ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Mealy_Controller:inst14     ; Mealy_Controller          ; work         ;
+;       |Mod32Counter:inst11|             ; 43 (43)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Mod32Counter:inst11         ; Mod32Counter              ; work         ;
+;       |MuxCustom:inst13|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|MuxCustom:inst13            ; MuxCustom                 ; work         ;
+;       |Register32Bit:inst|              ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Register32Bit:inst          ; Register32Bit             ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |NEC_IR_Transceiver|Mealy_Controller:inst1|present_state                                                                                                 ;
+; State Machine - |NEC_IR_Transceiver|NEC_IR_Receiver:inst|Mealy_Controller_Receiver:inst3|present_state                                                                   ;
 +------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 ; Name             ; present_state.S6 ; present_state.S5 ; present_state.S4 ; present_state.S3 ; present_state.S2 ; present_state.S1 ; present_state.Sx ; present_state.S0 ;
 +------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
@@ -250,14 +275,62 @@ Encoding Type:  One-Hot
 +------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                               ;
-+-----------------------------------------+----------------------------------------+
-; Register name                           ; Reason for Removal                     ;
-+-----------------------------------------+----------------------------------------+
-; Mealy_Controller:inst1|present_state.Sx ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1   ;                                        ;
-+-----------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Mealy_Controller:inst14|present_state                                                                       ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; present_state.S6 ; present_state.S5 ; present_state.S4 ; present_state.S3 ; present_state.S2 ; present_state.S1 ; present_state.Sx ; present_state.S0 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; present_state.S0 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; present_state.Sx ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
+; present_state.S1 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
+; present_state.S2 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
+; present_state.S3 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
+; present_state.S4 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; present_state.S5 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; present_state.S6 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                             ;
++-----------------------------------------------------------------------+----------------------------------------+
+; Register name                                                         ; Reason for Removal                     ;
++-----------------------------------------------------------------------+----------------------------------------+
+; NEC_IR_Receiver:inst|Mealy_Controller_Receiver:inst3|present_state.Sx ; Stuck at GND due to stuck port data_in ;
+; NEC_IR_Transmitter:inst6|Mealy_Controller:inst14|present_state.Sx     ; Stuck at GND due to stuck port data_in ;
+; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[10..31]                 ; Lost fanout                            ;
+; Total Number of Removed Registers = 24                                ;                                        ;
++-----------------------------------------------------------------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                 ;
++---------------------------------------------------+--------------------+----------------------------------------------------+
+; Register name                                     ; Reason for Removal ; Registers Removed due to This Register             ;
++---------------------------------------------------+--------------------+----------------------------------------------------+
+; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[31] ; Lost Fanouts       ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[30], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[29], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[28], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[27], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[26], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[25], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[24], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[23], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[22], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[21], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[20], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[19], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[18], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[17], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[16], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[15], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[14], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[13], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[12], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[11], ;
+;                                                   ;                    ; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[10]  ;
++---------------------------------------------------+--------------------+----------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -265,38 +338,88 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 167   ;
-; Number of registers using Synchronous Clear  ; 154   ;
+; Total registers                              ; 280   ;
+; Number of registers using Synchronous Clear  ; 256   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 71    ;
+; Number of registers using Asynchronous Clear ; 110   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 94    ;
+; Number of registers using Clock Enable       ; 156   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; LimitedCounter:inst7|counter[31]       ; 17      ;
-; LimitedCounter:inst7|counter[0]        ; 5       ;
-; Mod32Counter:inst4|counter[0]          ; 7       ;
-; Mod32Counter:inst4|counter[31]         ; 3       ;
-; Total number of inverted registers = 4 ;         ;
-+----------------------------------------+---------+
++----------------------------------------------------------------------+
+; Inverted Register Statistics                                         ;
++------------------------------------------------------------+---------+
+; Inverted Register                                          ; Fan out ;
++------------------------------------------------------------+---------+
+; NEC_IR_Transmitter:inst6|LimitedCounter:inst18|counter[31] ; 17      ;
+; NEC_IR_Transmitter:inst6|LimitedCounter:inst18|counter[0]  ; 5       ;
+; NEC_IR_Transmitter:inst6|Mod32Counter:inst11|counter[0]    ; 7       ;
+; NEC_IR_Transmitter:inst6|Mod32Counter:inst11|counter[31]   ; 3       ;
+; NEC_IR_Receiver:inst|PulseTimer:inst7|counter[0]           ; 6       ;
+; NEC_IR_Receiver:inst|Mod33Counter:inst6|counter[0]         ; 4       ;
+; NEC_IR_Receiver:inst|Mod33Counter:inst6|counter[31]        ; 5       ;
+; Total number of inverted registers = 7                     ;         ;
++------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |NEC_IR_Transceiver|Register32Bit:inst2|output[6]  ;
-; 4:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |NEC_IR_Transceiver|Mod32Counter:inst4|counter[22] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |NEC_IR_Transceiver|Mod32Counter:inst4|counter[31] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|ShiftRegister:inst|reg[14]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Register32Bit:inst|output[18]   ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Mod32Counter:inst11|counter[20] ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|Mod33Counter:inst6|counter[1]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |NEC_IR_Transceiver|NEC_IR_Transmitter:inst6|Mod32Counter:inst11|counter[31] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |NEC_IR_Transceiver|NEC_IR_Receiver:inst|Mod33Counter:inst6|counter[31]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst10 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; maxtime        ; 61    ; Signed Integer                                                ;
+; mintime        ; 49    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst9 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; maxtime        ; 182   ; Signed Integer                                               ;
+; mintime        ; 148   ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst8 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; maxtime        ; 483   ; Signed Integer                                               ;
+; mintime        ; 395   ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NEC_IR_Receiver:inst|TimeValidator:inst11 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; maxtime        ; 966   ; Signed Integer                                                ;
+; mintime        ; 790   ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -304,29 +427,29 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 167                         ;
-;     CLR               ; 9                           ;
-;     CLR SCLR          ; 30                          ;
+; arriav_ff             ; 280                         ;
+;     CLR               ; 17                          ;
+;     CLR SCLR          ; 61                          ;
 ;     ENA CLR SCLR      ; 32                          ;
-;     ENA SCLR          ; 62                          ;
-;     SCLR              ; 30                          ;
-;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 215                         ;
-;     arith             ; 128                         ;
-;         1 data inputs ; 128                         ;
+;     ENA SCLR          ; 124                         ;
+;     SCLR              ; 39                          ;
+;     plain             ; 7                           ;
+; arriav_lcell_comb     ; 347                         ;
+;     arith             ; 202                         ;
+;         1 data inputs ; 202                         ;
 ;     extend            ; 8                           ;
 ;         7 data inputs ; 8                           ;
-;     normal            ; 79                          ;
+;     normal            ; 137                         ;
 ;         1 data inputs ; 9                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 10                          ;
-;         6 data inputs ; 38                          ;
-; boundary_port         ; 29                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 22                          ;
+;         6 data inputs ; 69                          ;
+; boundary_port         ; 56                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.45                        ;
+; Average LUT depth     ; 3.37                        ;
 +-----------------------+-----------------------------+
 
 
@@ -345,60 +468,101 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Jul 07 14:03:31 2020
+    Info: Processing started: Fri Jul 10 01:22:46 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NEC_IR_Transceiver -c NEC_IR_Transceiver
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file muxcustom.vhd
-    Info (12022): Found design unit 1: MuxCustom-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd Line: 15
-    Info (12023): Found entity 1: MuxCustom File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/register32bit.vhd
+    Info (12022): Found design unit 1: Register32Bit-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd Line: 17
+    Info (12023): Found entity 1: Register32Bit File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/muxcustom.vhd
+    Info (12022): Found design unit 1: MuxCustom-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd Line: 15
+    Info (12023): Found entity 1: MuxCustom File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/mod32counter.vhd
+    Info (12022): Found design unit 1: Mod32Counter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd Line: 17
+    Info (12023): Found entity 1: Mod32Counter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/mealy_controller.vhd
+    Info (12022): Found design unit 1: Mealy_Controller-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd Line: 28
+    Info (12023): Found entity 1: Mealy_Controller File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/limitedcounter.vhd
+    Info (12022): Found design unit 1: LimitedCounter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd Line: 18
+    Info (12023): Found entity 1: LimitedCounter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/dataformatter.vhd
+    Info (12022): Found design unit 1: DataFormatter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd Line: 15
+    Info (12023): Found entity 1: DataFormatter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/clockmodulator.vhd
+    Info (12022): Found design unit 1: ClockModulator-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd Line: 20
+    Info (12023): Found entity 1: ClockModulator File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file transmitter/clockdivider.vhd
+    Info (12022): Found design unit 1: ClockDivider-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd Line: 15
+    Info (12023): Found entity 1: ClockDivider File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd Line: 5
+Info (15248): File "C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ClockDivider.vhd" is a duplicate of already analyzed file "C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd" (same filename, same library name and same md5 digest). Skipping analysis of this file.
+Info (12021): Found 0 design units, including 0 entities, in source file receiver/clockdivider.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file receiver/mealy_controller_receiver.vhd
+    Info (12022): Found design unit 1: Mealy_Controller_Receiver-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd Line: 29
+    Info (12023): Found entity 1: Mealy_Controller_Receiver File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file nec_ir_transceiver.bdf
     Info (12023): Found entity 1: NEC_IR_Transceiver
-Info (12021): Found 2 design units, including 1 entities, in source file register32bit.vhd
-    Info (12022): Found design unit 1: Register32Bit-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd Line: 17
-    Info (12023): Found entity 1: Register32Bit File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file mod32counter.vhd
-    Info (12022): Found design unit 1: Mod32Counter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd Line: 17
-    Info (12023): Found entity 1: Mod32Counter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file limitedcounter.vhd
-    Info (12022): Found design unit 1: LimitedCounter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd Line: 18
-    Info (12023): Found entity 1: LimitedCounter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file dataformatter.vhd
-    Info (12022): Found design unit 1: DataFormatter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd Line: 15
-    Info (12023): Found entity 1: DataFormatter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file clockmodulator.vhd
-    Info (12022): Found design unit 1: ClockModulator-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd Line: 20
-    Info (12023): Found entity 1: ClockModulator File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file clockdivider.vhd
-    Info (12022): Found design unit 1: ClockDivider-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 15
-    Info (12023): Found entity 1: ClockDivider File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file mealy_controller.vhd
-    Info (12022): Found design unit 1: Mealy_Controller-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd Line: 28
-    Info (12023): Found entity 1: Mealy_Controller File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file receiver/pulsetimer.vhd
+    Info (12022): Found design unit 1: PulseTimer-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd Line: 15
+    Info (12023): Found entity 1: PulseTimer File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file receiver/mod33counter.vhd
+    Info (12022): Found design unit 1: Mod33Counter-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mod33Counter.vhd Line: 16
+    Info (12023): Found entity 1: Mod33Counter File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mod33Counter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file receiver/wdt.vhd
+    Info (12022): Found design unit 1: WDT-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/WDT.vhd Line: 16
+    Info (12023): Found entity 1: WDT File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/WDT.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file receiver/shiftregister.vhd
+    Info (12022): Found design unit 1: ShiftRegister-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd Line: 17
+    Info (12023): Found entity 1: ShiftRegister File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file receiver/datacollector.vhd
+    Info (12022): Found design unit 1: DataCollector-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd Line: 16
+    Info (12023): Found entity 1: DataCollector File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file receiver/timevalidator.vhd
+    Info (12022): Found design unit 1: TimeValidator-behaviour File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd Line: 19
+    Info (12023): Found entity 1: TimeValidator File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file nec_ir_transmitter.bdf
+    Info (12023): Found entity 1: NEC_IR_Transmitter
+Info (12021): Found 1 design units, including 1 entities, in source file nec_ir_receiver.bdf
+    Info (12023): Found entity 1: NEC_IR_Receiver
 Info (12127): Elaborating entity "NEC_IR_Transceiver" for the top level hierarchy
-Info (12128): Elaborating entity "ClockModulator" for hierarchy "ClockModulator:inst6"
-Warning (10492): VHDL Process Statement warning at ClockModulator.vhd(30): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd Line: 30
-Info (12128): Elaborating entity "Mealy_Controller" for hierarchy "Mealy_Controller:inst1"
-Info (12128): Elaborating entity "MuxCustom" for hierarchy "MuxCustom:inst9"
-Info (12128): Elaborating entity "Register32Bit" for hierarchy "Register32Bit:inst2"
-Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:inst5"
-Info (12128): Elaborating entity "DataFormatter" for hierarchy "DataFormatter:inst"
-Info (12128): Elaborating entity "Mod32Counter" for hierarchy "Mod32Counter:inst4"
-Info (12128): Elaborating entity "LimitedCounter" for hierarchy "LimitedCounter:inst7"
+Info (12128): Elaborating entity "NEC_IR_Transmitter" for hierarchy "NEC_IR_Transmitter:inst6"
+Info (12128): Elaborating entity "ClockModulator" for hierarchy "NEC_IR_Transmitter:inst6|ClockModulator:inst17"
+Warning (10492): VHDL Process Statement warning at ClockModulator.vhd(30): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd Line: 30
+Info (12128): Elaborating entity "Mealy_Controller" for hierarchy "NEC_IR_Transmitter:inst6|Mealy_Controller:inst14"
+Info (12128): Elaborating entity "MuxCustom" for hierarchy "NEC_IR_Transmitter:inst6|MuxCustom:inst13"
+Info (12128): Elaborating entity "Register32Bit" for hierarchy "NEC_IR_Transmitter:inst6|Register32Bit:inst"
+Info (12128): Elaborating entity "ClockDivider" for hierarchy "NEC_IR_Transmitter:inst6|ClockDivider:inst15"
+Info (12128): Elaborating entity "DataFormatter" for hierarchy "NEC_IR_Transmitter:inst6|DataFormatter:inst8"
+Info (12128): Elaborating entity "Mod32Counter" for hierarchy "NEC_IR_Transmitter:inst6|Mod32Counter:inst11"
+Info (12128): Elaborating entity "LimitedCounter" for hierarchy "NEC_IR_Transmitter:inst6|LimitedCounter:inst18"
+Info (12128): Elaborating entity "NEC_IR_Receiver" for hierarchy "NEC_IR_Receiver:inst"
+Info (12128): Elaborating entity "Mealy_Controller_Receiver" for hierarchy "NEC_IR_Receiver:inst|Mealy_Controller_Receiver:inst3"
+Info (12128): Elaborating entity "Mod33Counter" for hierarchy "NEC_IR_Receiver:inst|Mod33Counter:inst6"
+Info (12128): Elaborating entity "TimeValidator" for hierarchy "NEC_IR_Receiver:inst|TimeValidator:inst10"
+Info (12128): Elaborating entity "PulseTimer" for hierarchy "NEC_IR_Receiver:inst|PulseTimer:inst7"
+Info (12128): Elaborating entity "TimeValidator" for hierarchy "NEC_IR_Receiver:inst|TimeValidator:inst9"
+Info (12128): Elaborating entity "TimeValidator" for hierarchy "NEC_IR_Receiver:inst|TimeValidator:inst8"
+Info (12128): Elaborating entity "TimeValidator" for hierarchy "NEC_IR_Receiver:inst|TimeValidator:inst11"
+Info (12128): Elaborating entity "DataCollector" for hierarchy "NEC_IR_Receiver:inst|DataCollector:inst4"
+Info (12128): Elaborating entity "ShiftRegister" for hierarchy "NEC_IR_Receiver:inst|ShiftRegister:inst"
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register ClockDivider:inst5|counter[31] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 21
-    Critical Warning (18010): Register ClockDivider:inst5|counter[0] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd Line: 21
+    Critical Warning (18010): Register NEC_IR_Transmitter:inst6|ClockDivider:inst15|counter[31] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd Line: 21
+    Critical Warning (18010): Register NEC_IR_Transmitter:inst6|ClockDivider:inst15|counter[0] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd Line: 21
+    Critical Warning (18010): Register NEC_IR_Receiver:inst|ClockDivider:inst5|counter[31] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd Line: 21
+    Critical Warning (18010): Register NEC_IR_Receiver:inst|ClockDivider:inst5|counter[0] will power up to Low File: C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd Line: 21
+Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 268 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 27 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 239 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Tue Jul 07 14:03:50 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:42
+Info (21057): Implemented 458 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 29 input pins
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 402 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4840 megabytes
+    Info: Processing ended: Fri Jul 10 01:22:59 2020
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 
