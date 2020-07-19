@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd}
+

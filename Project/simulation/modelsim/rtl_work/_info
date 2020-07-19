@@ -14,19 +14,19 @@ Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd
-Z6 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd
+Z5 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd
+Z6 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd
 l0
 L5
 VnmK9QVXiXU]e^=ez<V1PZ3
 !s100 KnB_0?OK2VALm`84Cj>bZ1
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1594122239
+Z8 !s110 1595199103
 !i10b 1
-Z9 !s108 1594122238.000000
-Z10 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd|
-Z11 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockDivider.vhd|
+Z9 !s108 1595199103.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd|
+Z11 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd|
 !i113 1
 Z12 o-work work
 Z13 tExplicit 1 CvgOpt 0
@@ -55,8 +55,8 @@ R2
 R3
 R4
 R0
-Z15 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd
-Z16 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd
+Z15 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd
+Z16 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd
 l0
 L6
 Vf?SD4Vac[QL`K1e@Cb`e91
@@ -65,9 +65,9 @@ R7
 32
 R8
 !i10b 1
-Z17 !s108 1594122239.000000
-Z18 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd|
-Z19 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/ClockModulator.vhd|
+R9
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd|
+Z18 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd|
 !i113 1
 R12
 R13
@@ -84,31 +84,72 @@ R7
 32
 R8
 !i10b 1
+R9
 R17
 R18
-R19
 !i113 1
 R12
 R13
-Edataformatter
-Z20 w1589386889
+Edatacollector
+Z19 w1594329281
 R2
 R3
 R4
 R0
-Z21 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd
-Z22 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd
+Z20 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd
+Z21 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd
+l0
+L5
+V>f`F7JBG3E^z;28N4OFN73
+!s100 g@@mMDkVhSmDS:Yg;5kcW2
+R7
+32
+Z22 !s110 1595199099
+!i10b 1
+Z23 !s108 1595199099.000000
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd|
+Z25 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 13 datacollector 0 22 >f`F7JBG3E^z;28N4OFN73
+l17
+L16
+V=IP<Zn:5QHA3ZSfI=XeD72
+!s100 <H^M`025SoQcTP_fPHYEA3
+R7
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+R13
+Edataformatter
+Z26 w1589386889
+R2
+R3
+R4
+R0
+Z27 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd
+Z28 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd
 l0
 L5
 VTX<SBbZSm00?]I3Ibzm330
 !s100 5@b1h;k^W=S[goice=GaT0
 R7
 32
-R8
+Z29 !s110 1595199104
 !i10b 1
-R17
-Z23 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd|
-Z24 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/DataFormatter.vhd|
+Z30 !s108 1595199104.000000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd|
+Z32 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd|
 !i113 1
 R12
 R13
@@ -123,33 +164,33 @@ V]5FCbOgnjOO5XcCZ?KMgC3
 !s100 `26Ff`dheMA7`42?Ve>]:3
 R7
 32
-R8
+R29
 !i10b 1
-R17
-R23
-R24
+R30
+R31
+R32
 !i113 1
 R12
 R13
 Elimitedcounter
-Z25 w1594118710
+Z33 w1594118710
 R2
 R3
 R4
 R0
-Z26 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd
-Z27 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd
+Z34 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd
+Z35 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd
 l0
 L5
 V>SMHAUnYI_7o=TZj>MzY22
 !s100 i?4FTVm]0OE4AA8<4i6K:3
 R7
 32
-R8
+R29
 !i10b 1
-R17
-Z28 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd|
-Z29 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/LimitedCounter.vhd|
+R30
+Z36 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd|
+Z37 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd|
 !i113 1
 R12
 R13
@@ -164,33 +205,33 @@ VXilc11`OiZa[^4NoD@dmG0
 !s100 4>SH^6@P<3I`kYHoHD5hE3
 R7
 32
-R8
-!i10b 1
-R17
-R28
 R29
+!i10b 1
+R30
+R36
+R37
 !i113 1
 R12
 R13
 Emealy_controller
-Z30 w1594123262
+Z38 w1594123262
 R2
 R3
 R4
 R0
-Z31 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd
-Z32 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd
+Z39 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd
+Z40 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd
 l0
 L5
 VNenJffo7Ajo;ni4<=8K9M2
 !s100 L]SUQZiE0@J_kcQDd55gd2
 R7
 32
-Z33 !s110 1594123273
+R29
 !i10b 1
-Z34 !s108 1594123273.000000
-Z35 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd|
-Z36 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mealy_Controller.vhd|
+R30
+Z41 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd|
+Z42 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd|
 !i113 1
 R12
 R13
@@ -205,33 +246,74 @@ VXF3OG8hYLHJ?i]Q^dl1O^1
 !s100 f^n7::zb4j@A[8RW]VK<82
 R7
 32
-R33
+R29
 !i10b 1
-R34
-R35
-R36
+R30
+R41
+R42
 !i113 1
 R12
 R13
-Emod32counter
-Z37 w1594121356
+Emealy_controller_receiver
+Z43 w1594993909
 R2
 R3
 R4
 R0
-Z38 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd
-Z39 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd
+Z44 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd
+Z45 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd
+l0
+L5
+VVWOz3[jbeofJ1<V=SOoZR2
+!s100 02BT``jV8f[IHKP[]I>Oj2
+R7
+32
+R22
+!i10b 1
+R23
+Z46 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd|
+Z47 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 25 mealy_controller_receiver 0 22 VWOz3[jbeofJ1<V=SOoZR2
+l32
+L29
+VdG]h5No95h_IF?BzfVA330
+!s100 YTPXncDHh?34T61<CKoai0
+R7
+32
+R22
+!i10b 1
+R23
+R46
+R47
+!i113 1
+R12
+R13
+Emod32counter
+Z48 w1594399688
+R2
+R3
+R4
+R0
+Z49 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd
+Z50 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd
 l0
 L5
 VBU91W3o_aPaLa9b8nU3TJ1
 !s100 ;E[<C=R:2=H9Xa0]UM1b81
 R7
 32
-R8
+R29
 !i10b 1
-R17
-Z40 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd|
-Z41 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Mod32Counter.vhd|
+R30
+Z51 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd|
+Z52 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd|
 !i113 1
 R12
 R13
@@ -246,33 +328,33 @@ VWo1zjk6>9QUkYbM7E2]4d0
 !s100 PFZi2_7]1Pl[:jbcc[1En3
 R7
 32
-R8
+R29
 !i10b 1
-R17
-R40
-R41
+R30
+R51
+R52
 !i113 1
 R12
 R13
 Emuxcustom
-Z42 w1594123405
+Z53 w1594123405
 R2
 R3
 R4
 R0
-Z43 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd
-Z44 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd
+Z54 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd
+Z55 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd
 l0
 L5
 VzF]<4FjBKhoHL9XYG^d8b0
 !s100 NIbCDCPQRzQ_gVC<k?@mo3
 R7
 32
-Z45 !s110 1594123446
+Z56 !s110 1595199105
 !i10b 1
-Z46 !s108 1594123446.000000
-Z47 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd|
-Z48 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/MuxCustom.vhd|
+Z57 !s108 1595199105.000000
+Z58 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd|
+Z59 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd|
 !i113 1
 R12
 R13
@@ -280,79 +362,239 @@ Abehaviour
 R2
 R3
 R4
-Z49 DEx4 work 9 muxcustom 0 22 zF]<4FjBKhoHL9XYG^d8b0
+DEx4 work 9 muxcustom 0 22 zF]<4FjBKhoHL9XYG^d8b0
 l16
 L15
 V<:hS0SOA8>9Wml>7`?VNl0
 !s100 GbDD?jMON_1692VK3DbKN3
 R7
 32
-R45
+R56
 !i10b 1
-R46
-R47
-R48
+R57
+R58
+R59
 !i113 1
 R12
 R13
-Enec_ir_transceiver
-Z50 w1594119561
+Enec_ir_receiver
+Z60 w1594399575
 R3
 R4
 R0
-Z51 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd
-Z52 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd
+Z61 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Receiver.vhd
+Z62 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Receiver.vhd
 l0
 L25
-VgU:X9<1:Ok0B_?C>7B:ao2
-!s100 Nz?Ffg1KA[0bFIO5:BbWK1
+VGMkoBaZ1F1YFzaaLfl[bL3
+!s100 ]kU34^ACdGZ>3ndXHWLzX2
 R7
 32
-Z53 !s110 1594122240
+Z63 !s110 1595199095
 !i10b 1
-Z54 !s108 1594122240.000000
-Z55 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd|
-Z56 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd|
+Z64 !s108 1595199095.000000
+Z65 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Receiver.vhd|
+Z66 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Receiver.vhd|
 !i113 1
 R12
 R13
 Abdf_type
 R3
 R4
-DEx4 work 18 nec_ir_transceiver 0 22 gU:X9<1:Ok0B_?C>7B:ao2
-l134
+DEx4 work 15 nec_ir_receiver 0 22 GMkoBaZ1F1YFzaaLfl[bL3
+l135
 L38
-Vz;Ya<_<ad@`ECh3Tc>;n?2
-!s100 n;T=AT__bm1gSU22<RdfO3
+VJlEbO^1jTIO<LldHF=nQJ3
+!s100 ?I]k@aliZm`NQEA>:aaHl1
 R7
 32
-R53
+R63
 !i10b 1
-R54
-R55
-R56
+R64
+R65
+R66
 !i113 1
 R12
 R13
-Eregister32bit
-Z57 w1589387146
+Enec_ir_transceiver
+Z67 w1594399588
+R3
+R4
+R0
+Z68 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd
+Z69 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd
+l0
+L25
+VYI<R[4Jm3V?ihK4z?EHYQ3
+!s100 Ea>=Q7aX25^7gQhk66T:I3
+R7
+32
+Z70 !s110 1595199096
+!i10b 1
+Z71 !s108 1595199096.000000
+Z72 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd|
+Z73 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transceiver.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R3
+R4
+DEx4 work 18 nec_ir_transceiver 0 22 YI<R[4Jm3V?ihK4z?EHYQ3
+l69
+L43
+V;CGYDh:[j_m>3K5Vj;@SY1
+!s100 W<zc=C5_NbYak^[:32MmO1
+R7
+32
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 1
+R12
+R13
+Enec_ir_transmitter
+Z74 w1594335915
+R3
+R4
+R0
+Z75 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transmitter.vhd
+Z76 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transmitter.vhd
+l0
+L25
+VDIPci79CAb5>DNDFY7BCI2
+!s100 IBKF_:oWmN9^<jQKO`10T2
+R7
+32
+R70
+!i10b 1
+R71
+Z77 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transmitter.vhd|
+Z78 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/NEC_IR_Transmitter.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R3
+R4
+DEx4 work 18 nec_ir_transmitter 0 22 DIPci79CAb5>DNDFY7BCI2
+l134
+L38
+V?ImjiQgYIK`GgFo[4JC8Q1
+!s100 YFnzg@@igWNf;`Sj^iiRV2
+R7
+32
+R70
+!i10b 1
+R71
+R77
+R78
+!i113 1
+R12
+R13
+Epulsetimer
+Z79 w1594157547
 R2
 R3
 R4
 R0
-Z58 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd
-Z59 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd
+Z80 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd
+Z81 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd
+l0
+L5
+V;^^;nj7f8[H5Df4cX]i^X2
+!s100 AR3BO3agITDbhiUo[;dJN2
+R7
+32
+R22
+!i10b 1
+R23
+Z82 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd|
+Z83 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 10 pulsetimer 0 22 ;^^;nj7f8[H5Df4cX]i^X2
+l17
+L15
+Vb]J?jM8Sa7R>KcHAY?4@D0
+!s100 ln^@_>HW803NdOTVG58Y20
+R7
+32
+R22
+!i10b 1
+R23
+R82
+R83
+!i113 1
+R12
+R13
+Erecmod32counter
+Z84 w1594399509
+R2
+R3
+R4
+R0
+Z85 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/recMod32Counter.vhd
+Z86 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/recMod32Counter.vhd
+l0
+L5
+V8RH9=;fP>[=onMYaSF8T^0
+!s100 H`oc8MfS3eeUg3f^3lRLM2
+R7
+32
+Z87 !s110 1595199100
+!i10b 1
+Z88 !s108 1595199100.000000
+Z89 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/recMod32Counter.vhd|
+Z90 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/recMod32Counter.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 15 recmod32counter 0 22 8RH9=;fP>[=onMYaSF8T^0
+l18
+L16
+VT4QFYW:Ml@FgOGNfP5GE;2
+!s100 c]2QAhWM:>4DJzWzif2P<1
+R7
+32
+R87
+!i10b 1
+R88
+R89
+R90
+!i113 1
+R12
+R13
+Eregister32bit
+Z91 w1589387146
+R2
+R3
+R4
+R0
+Z92 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd
+Z93 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd
 l0
 L5
 V8@Y@QVUUZ8;]g9D<Iencd0
 !s100 3N]`B28BcS?VzYkZ8ed]>1
 R7
 32
-R53
+R56
 !i10b 1
-R54
-Z60 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd|
-Z61 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Register32Bit.vhd|
+R57
+Z94 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd|
+Z95 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd|
 !i113 1
 R12
 R13
@@ -364,14 +606,137 @@ DEx4 work 13 register32bit 0 22 8@Y@QVUUZ8;]g9D<Iencd0
 l18
 L17
 VfdLcYbB3N?6lX>k=Whc9L3
-!s100 R?3jT]C0WgYi9oFYRU4Uc2
+Z96 !s100 R?3jT]C0WgYi9oFYRU4Uc2
 R7
 32
-R53
+R56
 !i10b 1
-R54
-R60
-R61
+R57
+R94
+R95
+!i113 1
+R12
+R13
+Eshiftregister
+Z97 w1594336950
+R2
+R3
+R4
+R0
+Z98 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd
+Z99 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd
+l0
+L5
+VRIkF]_XK_6fGE0CXiIJA63
+!s100 eEkc[jMkzm9Z_WBIK15lz0
+R7
+32
+R87
+!i10b 1
+R88
+Z100 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd|
+Z101 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 13 shiftregister 0 22 RIkF]_XK_6fGE0CXiIJA63
+l19
+L17
+Vc5_a^1YjO>l^Lk42C1hSh0
+!s100 Y>L4[E2an`jMfzzcZQ>e40
+R7
+32
+R87
+!i10b 1
+R88
+R100
+R101
+!i113 1
+R12
+R13
+Etimevalidator
+Z102 w1594332365
+R2
+R3
+R4
+R0
+Z103 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd
+Z104 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd
+l0
+L5
+V=WKF1<4:jN8WcO9827>I@2
+!s100 =3nEBENiF9;IEPJK;JNOo0
+R7
+32
+R87
+!i10b 1
+R88
+Z105 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd|
+Z106 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 13 timevalidator 0 22 =WKF1<4:jN8WcO9827>I@2
+l20
+L19
+V3z^n`[0AbAI_IgD5`SnEJ3
+!s100 G`SHEoeCQjc2FNU]JVWk03
+R7
+32
+R87
+!i10b 1
+R88
+R105
+R106
+!i113 1
+R12
+R13
+Ewdt
+Z107 w1594395500
+R2
+R3
+R4
+R0
+Z108 8C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/WDT.vhd
+Z109 FC:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/WDT.vhd
+l0
+L5
+Vl>K90]DSS8XEeeYTmAdz]1
+!s100 a57<1_FWoW[R1E^IHRIHo0
+R7
+32
+R87
+!i10b 1
+R88
+Z110 !s90 -reportprogress|300|-work|work|C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/WDT.vhd|
+Z111 !s107 C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/WDT.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 3 wdt 0 22 l>K90]DSS8XEeeYTmAdz]1
+l18
+L16
+VTeLbFK5RZAeB_e@zl5UJ:3
+!s100 GN:alk>ad`1GCKl;OboN^0
+R7
+32
+R87
+!i10b 1
+R88
+R110
+R111
 !i113 1
 R12
 R13

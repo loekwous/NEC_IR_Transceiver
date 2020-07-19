@@ -15,7 +15,7 @@
 
 -- PROGRAM		"Quartus Prime"
 -- VERSION		"Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
--- CREATED		"Fri Jul 10 01:13:17 2020"
+-- CREATED		"Fri Jul 10 18:46:15 2020"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -55,6 +55,22 @@ GENERIC (maxTime : INTEGER;
 	);
 END COMPONENT;
 
+COMPONENT recmod32counter
+	PORT(clear : IN STD_LOGIC;
+		 sys_clk : IN STD_LOGIC;
+		 cnt : IN STD_LOGIC;
+		 last : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT wdt
+	PORT(clear : IN STD_LOGIC;
+		 sys_clk : IN STD_LOGIC;
+		 nrst : IN STD_LOGIC;
+		 nWDTR : OUT STD_LOGIC
+	);
+END COMPONENT;
+
 COMPONENT mealy_controller_receiver
 	PORT(IR_in : IN STD_LOGIC;
 		 last : IN STD_LOGIC;
@@ -90,14 +106,6 @@ COMPONENT clockdivider
 	);
 END COMPONENT;
 
-COMPONENT mod33counter
-	PORT(clear : IN STD_LOGIC;
-		 sys_clk : IN STD_LOGIC;
-		 cnt : IN STD_LOGIC;
-		 last : OUT STD_LOGIC
-	);
-END COMPONENT;
-
 COMPONENT pulsetimer
 	PORT(t_clear : IN STD_LOGIC;
 		 sys_clk : IN STD_LOGIC;
@@ -113,13 +121,15 @@ SIGNAL	cnt :  STD_LOGIC;
 SIGNAL	D_shift :  STD_LOGIC;
 SIGNAL	last :  STD_LOGIC;
 SIGNAL	long :  STD_LOGIC;
+SIGNAL	nWDTR :  STD_LOGIC;
 SIGNAL	shift :  STD_LOGIC;
 SIGNAL	short :  STD_LOGIC;
 SIGNAL	sys_clk :  STD_LOGIC;
 SIGNAL	t_clear :  STD_LOGIC;
 SIGNAL	valid :  STD_LOGIC;
-SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC_VECTOR(9 DOWNTO 0);
-SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	SYNTHESIZED_WIRE_6 :  STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 
 BEGIN 
@@ -131,14 +141,17 @@ PORT MAP(d_in => D_shift,
 		 sys_clk => sys_clk,
 		 clear => clear,
 		 shift => shift,
-		 d_out => SYNTHESIZED_WIRE_2);
+		 d_out => SYNTHESIZED_WIRE_3);
+
+
+SYNTHESIZED_WIRE_2 <= nWDTR AND nrst;
 
 
 b2v_inst10 : timevalidator
 GENERIC MAP(maxTime => 61,
 			minTime => 49
 			)
-PORT MAP(d_in => SYNTHESIZED_WIRE_5,
+PORT MAP(d_in => SYNTHESIZED_WIRE_6,
 		 valid => short);
 
 
@@ -146,8 +159,22 @@ b2v_inst11 : timevalidator
 GENERIC MAP(maxTime => 966,
 			minTime => 790
 			)
-PORT MAP(d_in => SYNTHESIZED_WIRE_5,
+PORT MAP(d_in => SYNTHESIZED_WIRE_6,
 		 valid => b_long);
+
+
+b2v_inst14 : recmod32counter
+PORT MAP(clear => clear,
+		 sys_clk => sys_clk,
+		 cnt => cnt,
+		 last => last);
+
+
+b2v_inst2 : wdt
+PORT MAP(clear => t_clear,
+		 sys_clk => sys_clk,
+		 nrst => nrst,
+		 nWDTR => nWDTR);
 
 
 b2v_inst3 : mealy_controller_receiver
@@ -159,7 +186,7 @@ PORT MAP(IR_in => IR_in,
 		 b_long => b_long,
 		 valid => valid,
 		 sys_clk => sys_clk,
-		 nrst => nrst,
+		 nrst => SYNTHESIZED_WIRE_2,
 		 ready => ready,
 		 clear => clear,
 		 shift => shift,
@@ -170,7 +197,7 @@ PORT MAP(IR_in => IR_in,
 
 
 b2v_inst4 : datacollector
-PORT MAP(d_in => SYNTHESIZED_WIRE_2,
+PORT MAP(d_in => SYNTHESIZED_WIRE_3,
 		 valid => valid,
 		 address => address,
 		 data => data);
@@ -182,24 +209,17 @@ PORT MAP(clk50MHz => clk50MHz,
 		 sys_clk => sys_clk);
 
 
-b2v_inst6 : mod33counter
-PORT MAP(clear => clear,
-		 sys_clk => sys_clk,
-		 cnt => cnt,
-		 last => last);
-
-
 b2v_inst7 : pulsetimer
 PORT MAP(t_clear => t_clear,
 		 sys_clk => sys_clk,
-		 dout => SYNTHESIZED_WIRE_5);
+		 dout => SYNTHESIZED_WIRE_6);
 
 
 b2v_inst8 : timevalidator
 GENERIC MAP(maxTime => 483,
 			minTime => 395
 			)
-PORT MAP(d_in => SYNTHESIZED_WIRE_5,
+PORT MAP(d_in => SYNTHESIZED_WIRE_6,
 		 valid => b_short);
 
 
@@ -207,7 +227,7 @@ b2v_inst9 : timevalidator
 GENERIC MAP(maxTime => 182,
 			minTime => 148
 			)
-PORT MAP(d_in => SYNTHESIZED_WIRE_5,
+PORT MAP(d_in => SYNTHESIZED_WIRE_6,
 		 valid => long);
 
 clk50MHz <= clock50MHz;

@@ -1,0 +1,22 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Register32Bit.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/MuxCustom.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mod32Counter.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/Mealy_Controller.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/LimitedCounter.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/DataFormatter.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockModulator.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Transmitter/ClockDivider.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mealy_Controller_Receiver.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/PulseTimer.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/Mod33Counter.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/ShiftRegister.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/DataCollector.vhd}
+vcom -93 -work work {C:/Users/loeke/Dropbox/School/Fontys/CSA/NEC_IR_Transceiver/Project/Receiver/TimeValidator.vhd}
+

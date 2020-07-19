@@ -130,6 +130,7 @@ end process;
 
 -- Output decoder
 output_dec : process(present_state, IR_in, last, short, long, b_short, b_long, ready, valid)
+	variable tempTime : std_logic_vector(1 downto 0);
 begin
 
 	case present_state is
@@ -174,12 +175,37 @@ begin
 			end if;
 		when S3 =>
 			if (IR_in = '0') and (short = '1') then
-				clear 		<= '0' after 5 ns;
-				shift			<= '0' after 5 ns;
-				D_shift 		<= '0' after 5 ns;
-				t_clear 		<= '1' after 5 ns;
-				cnt	 		<= '0' after 5 ns;
-				available	<= '0' after 5 ns;
+				tempTime := short & long;
+				case tempTime is
+					when "00" =>
+						clear 		<= '0' after 5 ns;
+						shift			<= '0' after 5 ns;
+						D_shift 		<= '0' after 5 ns;
+						t_clear 		<= '1' after 5 ns;
+						cnt	 		<= '0' after 5 ns;
+						available	<= '0' after 5 ns;
+					when "01" =>
+						clear 		<= '0' after 5 ns;
+						shift			<= '0' after 5 ns;
+						D_shift 		<= '0' after 5 ns;
+						t_clear 		<= '1' after 5 ns;
+						cnt	 		<= '0' after 5 ns;
+						available	<= '0' after 5 ns;
+					when "10" =>
+						clear 		<= '0' after 5 ns;
+						shift			<= '0' after 5 ns;
+						D_shift 		<= '0' after 5 ns;
+						t_clear 		<= '1' after 5 ns;
+						cnt	 		<= '0' after 5 ns;
+						available	<= '0' after 5 ns;
+					when others =>
+						clear 		<= '0' after 5 ns;
+						shift			<= '0' after 5 ns;
+						D_shift 		<= '0' after 5 ns;
+						t_clear 		<= '1' after 5 ns;
+						cnt	 		<= '0' after 5 ns;
+						available	<= '0' after 5 ns;
+					end case;
 			else
 				clear 		<= '0' after 5 ns;
 				shift			<= '0' after 5 ns;
@@ -188,14 +214,23 @@ begin
 				cnt	 		<= '0' after 5 ns;
 				available	<= '0' after 5 ns;
 			end if;
-		when S4 => -- Shift data while not last character
+		when S4 =>
 			if (IR_in = '1') and (last = '1') then 
-				clear 		<= '0' after 5 ns;
-				shift			<= '0' after 5 ns;
-				D_shift 		<= '0' after 5 ns;
-				t_clear 		<= '1' after 5 ns;
-				cnt	 		<= '0' after 5 ns;
-				available	<= '0' after 5 ns;
+				if (short = '1') or (long = '1') then
+					clear 		<= '0' after 5 ns;
+					shift			<= '1' after 5 ns;
+					D_shift 		<= '1' after 5 ns;
+					t_clear 		<= '1' after 5 ns;
+					cnt	 		<= '0' after 5 ns;
+					available	<= '0' after 5 ns;
+				else
+					clear 		<= '0' after 5 ns;
+					shift			<= '0' after 5 ns;
+					D_shift 		<= '0' after 5 ns;
+					t_clear 		<= '1' after 5 ns;
+					cnt	 		<= '0' after 5 ns;
+					available	<= '0' after 5 ns;
+				end if;
 			elsif (IR_in = '1') and (last = '0') and (short = '1') then 
 				clear 		<= '0' after 5 ns;
 				shift			<= '1' after 5 ns;
@@ -229,7 +264,7 @@ begin
 			clear 		<= '0' after 5 ns;
 			shift			<= '0' after 5 ns;
 			D_shift 		<= '0' after 5 ns;
-			t_clear 		<= '0' after 5 ns;
+			t_clear 		<= '1' after 5 ns;
 			cnt	 		<= '0' after 5 ns;
 			available	<= '1' after 5 ns;
 		when others =>

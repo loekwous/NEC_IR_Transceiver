@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity Mod33Counter is
+entity recMod32Counter is
 
 	port(
 		clear : in std_logic;
@@ -13,7 +13,7 @@ entity Mod33Counter is
 
 end entity;
 
-architecture behaviour of Mod33Counter is
+architecture behaviour of recMod32Counter is
 	signal counter : integer;
 begin
 
@@ -24,7 +24,7 @@ begin
 			if clear = '1' then
 				counter <= 0 after 5 ns;
 			elsif cnt = '1' then
-				if counter < 32 then
+				if counter < 31 then
 					counter <= counter + 1 after 5 ns;
 				else
 					counter <= 0 after 5 ns;
@@ -37,7 +37,7 @@ begin
 	process(counter)
 	begin
 	
-		if counter = 32 then
+		if counter = 31 then
 			last <= '1' after 5 ns;
 		else
 			last <= '0' after 5 ns;

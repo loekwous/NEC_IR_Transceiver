@@ -25,7 +25,7 @@ begin
 			if clear = '1' then
 				counter <= 0 after 5 ns;
 			else
-				if counter > 8800 then
+				if counter > 1000 then
 					counter <= 0 after 5 ns;
 				else
 					counter <= counter + 1 after 5 ns;
@@ -36,7 +36,7 @@ begin
 	
 	process(counter)
 	begin
-		if counter = 8800 then
+		if counter = 1000 then
 			nWDTR <= '0' after 5 ns;
 		else
 			nWDTR <= '1' after 5 ns;
